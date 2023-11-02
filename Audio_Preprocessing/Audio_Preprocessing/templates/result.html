@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Pre-Processing</title>
+</head>
+<style>
+    body{
+  position: absolute;
+  left: auto;
+  text-align: center;
+  width: 600px;
+  height: 120px;
+  top:200px;
+  bottom: 50px;
+  
+} 
+
+</style>
+<body  background="/static/image.jpg">
+    <h1>Pre-processed Audio Signal</h1>
+
+    <audio controls>
+        <source src="{{ url_for('static', filename='audio_trunc.wav') }}" type="audio/wav">
+    </audio>
+</body>
+</html>

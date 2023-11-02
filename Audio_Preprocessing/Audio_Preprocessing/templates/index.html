@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Pre-Processing</title>
+</head>
+<style>
+    body{
+  position: absolute;
+  left: auto;
+  text-align: center;
+  width: 600px;
+  height: 120px;
+  top:200px;
+  bottom: 50px;
+  
+}   
+</style>
+<body background="/static/image.jpg">
+    
+    <h1>Audio Pre-Processing</h1>
+
+    <form method="POST" action="{{ url_for('process') }}" enctype="multipart/form-data">
+        <input type="file" name="file" accept="audio/*">
+        <br><br>
+        <button type="submit">Process</button>
+    </form>
+    
+</body>
+</html>
